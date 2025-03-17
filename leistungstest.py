@@ -3,11 +3,9 @@ import numpy as np
 
  
 
-def Leistungstests(first_experiment_id: int):
+def Leistungstest(first_experiment_id: int): 
 
-   
-
-    # first_experiment_id is a int?
+    # first_experiment_id ist ein integer?
 
     try:
 
@@ -15,38 +13,36 @@ def Leistungstests(first_experiment_id: int):
 
     except ValueError:
 
-        print("Error: first_experiment_id is a int")
+        print("Error: first_experiment_id ist ein integer")
 
         return[]
 
    
 
     # Liste für Experiment erstellen
-
     experiments = []
-
- 
+    
 
     # Schleife mit 10 Experimente
-
     for i in range(10):
 
         experiment = {
 
             "id" : first_experiment_id + i,  # id soll sich um i erhöhen
 
-            "date" : date.today(),
-
-            "name" : "Lena Kurzthaler"
+            "Erstellungsdatum" : date.today(),
+            
+            "Versuchsleiter:in" : "Lena Kurzthaler"
 
         }
 
-        experiments.append(experiment)           # Überschriften für Experiment hinzufügen
+        # Überschriften für Experiment hinzufügen
+        experiments.append(experiment)
+       
 
  
 
     # Schleife, um die ersten 5 Experimente anzuzeigen
-
     for experiment in experiments[:5]:
 
         print(experiment)
@@ -64,15 +60,12 @@ def Leistungstests(first_experiment_id: int):
 
             even_id += 1
 
-            print("even_id: ", even_id)
+            print("gerade: ", even_id)
 
         else:
 
-            print("first_experiment_id is odd")
+            print("first_experiment_id ist ungerade")
+            
 
-
- 
-
-print(Leistungstests(10))
-
+print(Leistungstest(10))
 
