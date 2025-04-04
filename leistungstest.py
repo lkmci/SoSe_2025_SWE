@@ -1,7 +1,6 @@
 from datetime import date
 import numpy as np
 
- 
 
 def Leistungstest(first_experiment_id: int): 
 
@@ -10,6 +9,7 @@ def Leistungstest(first_experiment_id: int):
     try:
 
         first_experiment_id = int(first_experiment_id)
+
 
     except ValueError:
 
