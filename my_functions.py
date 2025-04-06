@@ -25,4 +25,4 @@ def ask_sex() -> str:
         return "male"
     else:
         print("Please enter 'w' or 'm'")
-        ask_sex()
+        ask_sex() 
