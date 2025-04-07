@@ -1,4 +1,4 @@
-from my_classes import Subject, Supervisor, Experiment
+from my_classes_lena import Subject, Supervisor, Experiment
 
 if __name__ == "__main__":
 
