@@ -15,9 +15,9 @@ class Subject():
 class Supervisor():
     def __init__(self, first_name, last_name):
       self.first_name = first_name
-
+      self.last_name = last_name
     def __str__(self):
-       return f"Vorname: {self.first_name}"
+       return f"Vorname: {self.first_name}, Nachname: {self.last_name}"
 
 class Experiment():
     def __init__(self, name, date):
